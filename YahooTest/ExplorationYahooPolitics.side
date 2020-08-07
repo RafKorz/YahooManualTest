@@ -1,0 +1,98 @@
+{
+  "id": "ae7f86b3-cafa-48e3-996f-22eee51290a1",
+  "version": "2.0",
+  "name": "ExplorationYahooPolitics",
+  "url": "https://news.yahoo.com",
+  "tests": [{
+    "id": "06ad2000-b82f-4ef7-9b95-22dd35c9cfe1",
+    "name": "Exploration Yahoo Politics",
+    "commands": [{
+      "id": "a1ccfb6f-bd63-4009-b491-cf5bc7b41dfa",
+      "comment": "",
+      "command": "open",
+      "target": "/politics/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42b8b52a-e4eb-46f6-80d7-a7cb9f9b21ba",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1036x700",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ebe8a92f-251f-4250-a6ba-1c4a4132444b",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "linkText=Should America defund the police?",
+      "targets": [
+        ["linkText=Should America defund the police?", "linkText"],
+        ["css=.W\\(275px\\)", "css:finder"],
+        ["xpath=//a[contains(text(),'Should America defund the police?')]", "xpath:link"],
+        ["xpath=//div[@id='Col2-0-NewsTabsRR-Proxy']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://news.yahoo.com/should-america-defund-the-police-153755731.html')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Should America defund the police?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1cf1fc0a-de2b-4b7e-bb93-b5c9d7785c47",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "linkText=Should America defund the police?",
+      "targets": [
+        ["linkText=Should America defund the police?", "linkText"],
+        ["css=.W\\(275px\\)", "css:finder"],
+        ["xpath=//a[contains(text(),'Should America defund the police?')]", "xpath:link"],
+        ["xpath=//div[@id='Col2-0-NewsTabsRR-Proxy']/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://news.yahoo.com/should-america-defund-the-police-153755731.html')]", "xpath:href"],
+        ["xpath=//div/div/div/div/div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Should America defund the police?')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "5e4f55c8-e402-4dfc-852a-e660f1deae04",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,287)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "3ef69535-cfda-45ab-af58-fd7ed618c01f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.comment-btn-tooltip",
+      "targets": [
+        ["css=.comment-btn-tooltip", "css:finder"],
+        ["xpath=//div[@id='YDC-Stream']/ul/li[2]/div/div/div[3]/a/b", "xpath:idRelative"],
+        ["xpath=//div[3]/a/b", "xpath:position"],
+        ["xpath=//b[contains(.,'Reactions')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b342d6b3-10f3-42bf-ac38-064b5150f2c8",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,0)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9dd2927-4ddf-4716-b4c1-42c5f998ffde",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "76274811-f886-4de6-b356-e8c9d2df5462",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["06ad2000-b82f-4ef7-9b95-22dd35c9cfe1"]
+  }],
+  "urls": ["https://news.yahoo.com/"],
+  "plugins": []
+}

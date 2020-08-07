@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite>
+	<id>S1</id>
+	<name>Master</name>
+	<description></description>
+	<sections>
+		<section>
+		<name>Test Cases</name>
+		<description></description>
+						
+		<cases>
+									
+						<case>
+				<id>C1</id>
+				<title>Login mail test yahoo via e-mail</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: lohin: rkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610</preconds>
+										<steps>1. Wejście na witrynę yahoo.com
+2. Wybór logowania na mail
+3. W polu loginu wpisuję: rkorzeniec@yahoo.com
+4. W polu hasła wpisuję hasło
+5. W telefonie potwierdzenie logowania
+5. Wejście w aplikację.</steps>
+										<expected>Poprawne zalogowanie się do aplikacji.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C2</id>
+				<title>Login mail test yahoo via mobile</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: e-mail rkorzeniec@yahoo.com, hasło: *****, tel: 603 601 610</preconds>
+										<steps_separated><step>
+<index>1</index><content>Wejście na yahoo.com</content><expected>Wejście na yahoo.com</expected></step>
+<step>
+<index>2</index><content>Wejście w logowanie na mail</content><expected>Wejście na logowanie na mail</expected></step>
+<step>
+<index>3</index><content>Wpisanie w polu login numeru telefonu</content><expected>Wpisanie w polu login numeru telefonu</expected></step>
+<step>
+<index>4</index><content>Potwierdzenie logowania przez wysłanie kodu weryfikacyjnego</content><expected>Wysłanie kodu weryfikacyjnego</expected></step>
+<step>
+<index>5</index><content>Wpisanie kodu weryfikacyjnego</content><expected>akceptacja aplikacji</expected></step>
+<step>
+<index>6</index><content>Poprawne logowanie.</content><expected>Poprawne logowanie.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C3</id>
+				<title>Login mail test yahoo via e-mail with uncorrect password</title>
+												<template>Test Case (Steps)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: e-mail rkorzeniec@yahoo.com, hasło ****, tel 601 601 610
+</preconds>
+										<steps_separated><step>
+<index>1</index><content>Wejście na yahoo.com</content><expected>Wejście na yahoo.com</expected></step>
+<step>
+<index>2</index><content>Wybór pola logowania.</content><expected>Wejście w panel logowania.</expected></step>
+<step>
+<index>3</index><content>Wpisanie e-mail do logowania.</content><expected>Przekierowanie do podania hasła</expected></step>
+<step>
+<index>4</index><content>Wpisanie błędnego hasła.</content><expected>Informacja z aplikacji o niepoprawnym haśle.</expected></step>
+</steps_separated>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C4</id>
+				<title>Login mail test yahoo via e-mail with stay signed in</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: e-mail rkorzeniec@yahoo.com, hasło ****, tel 603 601 610</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wybór opcji logowania
+3. Wpisanie w polu login adresu email do logowania zaznaczając &quot;stay signed in&quot;
+4. Wpisanie hasła
+5. Wybór weryfikacji na numer telefonu
+6. Wpisanie wysłanego przez aplikacje kodu sms
+7. Wejście w aplikację
+8. Zamknięcie aplikacji
+9. Ponowne otwarcie aplikacji</steps>
+										<expected>Zalogowanie się do aplikacji. Pozostanie zalogowanym w aplikacji po wyjściu i ponownym wejściu na yahoo.com.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C5</id>
+				<title>Login mail test yahoo via mobile with stay signed in</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: e-mail rkorzeniec@yahoo.com, hasło ****, tel 603 601 610</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wybór opcji logowania
+3. Wpisanie w polu login adresu email do logowania zaznaczając &quot;stay signed in&quot;
+4. Wpisanie hasła
+5. Wybór weryfikacji na numer telefonu
+6. Wpisanie wysłanego przez aplikacje kodu sms
+7. Wejście w aplikację
+8. Zamknięcie aplikacji
+9. Ponowne otwarcie aplikacji</steps>
+										<expected>Zalogowanie do aplikacji i pozostanie w niej zalogowanym po wyjściu i wejściu na yahoo.com.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C6</id>
+				<title>Registration on yahoo</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: lohin: rkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610, imię: Rafał, nazwisko: Korzeniec, data urodzenia: 26 czerwca 1990</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; wpisanie imienia
+5. W polu &quot;Last name&quot; wpisanie nazwiska
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;
+11. Weryfikacja na podany numer telefonu
+12. Utworzenie konta</steps>
+										<expected>Rejestracja na yahoo.com</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C7</id>
+				<title>Registration on yahoo with existing mobile number on yahoo</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: login: rafalkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610, imię: Rafał, nazwisko: Korzeniec, data urodzenia: 26 czerwca 1990</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; wpisanie imienia
+5. W polu &quot;Last name&quot; wpisanie nazwiska
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu już istniejącego przy innym koncie, wpisanie daty urodzenia
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;</steps>
+										<expected>Aplikacja powinna zablokować możliwość założenia konta z powodu istniejącego już numeru telefonu. Yahoo pozwala na utworzenie konta z zajętym już numerem telefonu.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C8</id>
+				<title>Registration on yahoo with existing e-mail adress on yahoo</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: login: rafalkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610, imię: Rafał, nazwisko: Korzeniec, data urodzenia: 26 czerwca 1990</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; wpisanie imienia
+5. W polu &quot;Last name&quot; wpisanie nazwiska
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji - już istniejącego
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu już istniejącego przy innym koncie, wpisanie daty urodzenia
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;</steps>
+										<expected>Aplikacja blokuje możliwość założenia konta z powodu istniejącego już adresu e-mail. Wyskakuje stosowny komentarz po wpisaniu już istniejącego adresu email.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C9</id>
+				<title>Registration on yahoo with numbers and critical signs in first and last name</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: login: @yahoo.com, hasło: *******, tel: 603 601 610, imię: 123!, nazwisko: 234@, data urodzenia: 26 czerwca 1990</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; wpisanie 123!
+5. W polu &quot;Last name&quot; wpisanie 234@
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu, zaznaczenie daty urodzenia
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;
+11. Weryfikacja na podany numer telefonu
+12. Utworzenie konta</steps>
+										<expected>Yahoo powinno blokować imię i nazwisko w postaci znaków specjalnych i liczb.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C10</id>
+				<title>Yahoo performance test</title>
+												<template>Test Case (Text)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64, JMeter
+Dane testowe: liczba wątków: 100, liczba powtórzeń: 100, uruchomienia co 1 sekundę
+Test przerwany na poziomie 6/100 (zaczęto 100/100 idąc w dół)</preconds>
+										<steps>1. Uruchomienie aplikacji JMeter
+2. Ustawienie na 100 liczby wątków
+3. Ustawienie na 100 liczby wątków
+4. Uruchomienia co 1 sekundę
+5. Wstawienie w pole HTTP adresu witryny yahoo.com
+6. Uruchomienie testu wydajności.</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C11</id>
+				<title>Mobile fiendly</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Windows 10 64 bit
+Data sprawdzenia: 17 cze 2020, godz. 00:19
+</preconds>
+										<steps>Wpisanie adresu URL yahoo.com w narzędzie: https://search.google.com/test/mobile-friendly</steps>
+										<expected>Strona jest dostosowana do komórek
+Obsługa tej strony na urządzeniu mobilnym jest łatwa</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C12</id>
+				<title>Yahoo performance test in many tools</title>
+												<template>Test Case (Text)</template>
+																<type>Performance</type>
+																<priority>High</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko Windows 10 64 bit
+http://developers.google.com/speed/pagespeed/insights/?hl=pl</preconds>
+										<steps>Wpisanie w narzędzie http://developers.google.com/speed/pagespeed/insights/?hl=pl adresu URL yahoo</steps>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C13</id>
+				<title>Yahoo exploration politics</title>
+												<template>Exploratory Session</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<mission>Sprawdzenie zakładki &quot;Politics&quot; - polityka.</mission>
+										<goals>Treść artykułów - wyświetla się poprawnie.
+Suwaki - działają poprawnie.
+Sekcja komentarzy - niewidoczna, gdy jako użytkownik wchodzę w odnośnik do komentarzy aby się z nimi zapoznać - zostaje przekierowany na czoło artykułu. Z Selenium IDE - poprawnie przerzuca na sekcję komentarzy.</goals>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C14</id>
+				<title>Registration yahoo incorrect date of birth</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Low</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: lohin: rkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610, imię: Rafał, nazwisko: Korzeniec, data urodzenia: 26 czerwca 1348</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; wpisanie imienia
+5. W polu &quot;Last name&quot; wpisanie nazwiska
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;
+11. Weryfikacja na podany numer telefonu
+12. Utworzenie konta</steps>
+										<expected>System nie pozwala na rejestrację użytkownika z nieprawdopodobną datą urodzenia.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C15</id>
+				<title>Search Yahoo</title>
+												<template>Test Case (Text)</template>
+																<type>Functional</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Windows 10 64 bit, Mozilla Firefox/Google Chrome/Opera
+Dane testowe: Trump - wpisane w wyszukiwarkę yahoo</preconds>
+										<steps>1. Wejście na yahoo.com
+2. W polu &quot;Search&quot; wpisane dane &quot;Trump&quot;
+3. Wyświetlenie rekordów w kontekście prezydenta Donalda Trumpa</steps>
+										<expected>Wyświetlenie rekordów w kontekście prezydenta Donalda Trumpa.</expected>
+									</custom>
+							</case>
+												
+						<case>
+				<id>C16</id>
+				<title>Registration without first and last name.</title>
+												<template>Test Case (Text)</template>
+																<type>Other</type>
+																<priority>Medium</priority>
+																<estimate></estimate>
+																								<references></references> 
+																				<custom>
+										<automation_type><id>0</id><value> None</value></automation_type>
+										<preconds>Środowisko: Windows 10 64 bit, Mozilla Firefox/Google Chrome/ Opera
+Dane testowe: login: rafalkorzeniec@yahoo.com, hasło: *******, tel: 603 601 610, data urodzenia: 26 czerwca 1990</preconds>
+										<steps>1. Wejście na yahoo.com
+2. Wejście w opcję logowania
+3. Wybór opcji rejestracji - utworzenia konta
+4. W polu &quot;First name&quot; nic nie wpisać
+5. W polu &quot;Last name&quot; nic nie wpisać
+6. W polu &quot;Email adress&quot; wpisanie nazwy maila do rejestracji
+7. W polu&quot;Mobile phone number&quot; wpisanie numeru telefonu już istniejącego przy innym koncie, wpisanie daty urodzenia
+8. Ustalenie hasła
+9. Zaznaczenie daty urodzenia
+10. Wciśnięcie &quot;Continue&quot;</steps>
+										<expected>Yahoo blokuje możliwość założenia konta bez wpisania imienia i nazwiska.</expected>
+									</custom>
+							</case>
+								</cases>
+							</section>
+	</sections>
+</suite>
